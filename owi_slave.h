@@ -13,6 +13,8 @@
 #define	OWI_ST_ANSWER		2
 
 void owi_init(void);
-uint8_t temp[2];
+uint8_t owi_calc_crc(uint8_t *mas, uint8_t Len);
+uint8_t owi_ROM[8];
+uint8_t owi_SCRATCHPAD[9];
 
 #endif /* OWI_SLAVE_H_ */
