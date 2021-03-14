@@ -78,7 +78,7 @@ ISR(INT0_vect) {
 		if (st == OWI_ST_ANSWER) {
 			if ((buff[0] & 1) == 0) {
 				DDRD |= 0x04;
-				_delay_us(40);
+				_delay_us(20);
 				DDRD &= ~0x04;
 			}
 			buff[0] >>= 1;
